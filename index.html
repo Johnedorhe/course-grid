@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+
+    <script defer src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+</head>
+<body class="flex flex-col min-h-screen">
+  <h1 class="text-center font-semibold">Node.js Curriculum</h1>
+
+  <section class="flex space-x-2">
+  <article class="flex-5 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 p-4 gap-2 min-h-screen">
+    <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+      <h3>Node.js Basic</h3>
+    <button id="node-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>NPM and Package Management</h3>
+    <button id="npm-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Core Modules and Asynchronous Programming</h3>
+    <button id="core-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Event-Driven Programming</h3>
+    <button id="event-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Express.js Fundamentals</h3>
+    <button id="express-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Template Engines and CRUD</h3>
+    <button id="template-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Database Integration and RESTful API</h3>
+    <button id="database-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Security and Advanced Features</h3>
+    <button id="security-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Aggregation in MongoDB</h3>
+    <button id="aggregation-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Deployment Strategies</h3>
+    <button id="deployment-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Node.js with GraphQL</h3>
+    <button id="graphQL-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div>
+  <div class="border border-gray-300 rounded p-2 text-xs font-semibold flex flex-col flex-1 justify-between"> 
+    <h3>Node.js with Typescript</h3>
+    <button id="typescript-btn" class="text-white bg-black rounded-xs p-1">View Chapters</button>
+  </div> 
+</article>
+
+<article id="content" class="flex-3 hidden rounded-lg py-20 px-4 space-y-3 bg-gray-800 text-white">
+  <div id="node" class="hidden">
+    <h1>Node.js Basics</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+    <button class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+  </div>
+      <div id="npm" class="hidden">
+        <h1>NPM and Package Management</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="core" class="hidden">
+        <h1>Core Modules and Asynchronous Programming</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="event" class="hidden">
+        <h1>Event-Driven Programming</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="express" class="hidden">
+        <h1>Express.js Fundamentals</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="template" class="hidden">
+        <h1>Template Engines and CRUD</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button   class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="database" class="hidden">
+        <h1>Database Integration and RESTful API</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="security" class="hidden">
+        <h1>Security and Advanced Features</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="aggregation" class="hidden">
+        <h1>Aggregation in MongoDB</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="deployment" class="hidden">
+        <h1>Deployment Strategies</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button class="mclose-btn in-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="graphQL" class="hidden">
+        <h1>Node.js with GraphQL</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+      <div id="typescript" class="hidden">
+        <h1>Node.js with Typescript</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure cum nesciunt ratione labore adipisci?</p>
+        <button  class="close-btn min-w-full text-sm mt-40 bg-gray-500 text-center text-gray-100 p-1 font-semibold rounded">Close</button>
+      </div>
+</article>
+</section> 
+</body>
+</html>
